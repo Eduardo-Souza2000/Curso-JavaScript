@@ -126,18 +126,61 @@ console.log (calculePorcentagem(100));
 
 //Aula 02
 
+
+/*
 //OPERADORES LÓGICOS
 
+//declaração das variaveis com nummeros
 let numeroPrimeiro = 20;
 let numeroSegundo = 30;
-
+//operações tradicionais
 console.log  (numeroPrimeiro + numeroSegundo);
 console.log (numeroPrimeiro - numeroSegundo);
 console.log (numeroPrimeiro * numeroSegundo);
 console.log (numeroPrimeiro / numeroSegundo);
-
+//inserindo o valor da primeira variavel + a segunda para variavel total
 let total = numeroPrimeiro + numeroSegundo;
-
+//exibindo na tela o valor total
 console.log (total);
+//exibindo na tela o valor total com decremento
 console.log (--total);
+//exibindo na tela o valor total com incremento
 console.log (++total);
+*/
+
+
+//OPERADOR DE ATRIBUIÇÃO
+/*
+let numero = 50;
+//a operação de baixo é a mesma que numero = numero + 50;
+//podemos fazer esse modelo para qualquer tipo de conta, divisão, multiplicação, adição e subtração
+numero += 50;
+numero -= 90;
+numero /= 50;
+numero *= 50;
+console.log (numero);
+*/
+
+
+//OPERADORES DE COMPARAÇÃO
+/*
+//inserimos o valor para variavel e logo apos fazemos as comparções
+let numero = 5;
+
+console.log (numero > 0);
+console.log (numero < 0);
+console.log (numero >= 5);
+console.log (numero <= 0);
+
+console.log (numero === 6);
+console.log (numero != 10);
+
+
+//A comparação pode ser feita com strings tqambém 
+let nome = 'eduardo';
+
+console.log (nome === 'joao');
+console.log (nome != 'marcos');
+console.log (nome === 'eduardo');
+*/
+
