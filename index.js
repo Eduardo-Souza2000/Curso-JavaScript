@@ -184,3 +184,32 @@ console.log (nome != 'marcos');
 console.log (nome === 'eduardo');
 */
 
+//OPERADORES DE IGUALDADE
+/*
+let primeiroNumero = 10;
+let segundoNumero = 10;
+
+console.log(primeiroNumero === segundoNumero);
+
+
+let numeroPrimeiro = '10';
+let numeroSegundo = 10;
+//esse operador compara o tipo da variavel e o valor chamado de STRICT
+console.log (numeroPrimeiro === numeroSegundo);
+//esse operador compara somente o valor da variavel, chamado de LOSE 
+console.log (numeroPrimeiro == numeroSegundo);
+*/
+
+//OPERADOR TERNÁRIO
+
+let carro = 90;
+
+let velocidade = carro > 110 ? 'Acima da Velocidade' : 'Velocidade Normal';
+
+console.log (velocidade);
+
+let carros = 190;
+
+let velocidades = carros > 110 ? 'Acima da Velocidade' : 'Velocidade Normal';
+
+console.log (velocidades);
