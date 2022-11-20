@@ -83,7 +83,7 @@ console.log (amigos);
 
 console.log (amigos [2]);
 
-//FUNÇÃO 
+//FUNÇÃO e FUNÇÕES COM PARAMETROS
  
 //fução normal sem parametro
 function statusProposta() {
@@ -104,3 +104,16 @@ function statusProposta(status, valor, cor) {
 }
 //inserimos  argumento dos parametros a cima
 statusProposta(' Aprovada', 20000, 'azul');
+
+
+//FUNÇÕES COM CALCULOS MATEMÁTICOS
+
+function calculePorcentagem (valor) {
+    return valor - (valor * 10 / 100)
+}
+//forma de exibir o valor da tela
+let total = calculePorcentagem (100);
+console.log (calculePorcentagem (100))
+
+//forma mais facil de exibir o valor na tela
+console.log (calculePorcentagem(100));
