@@ -1,4 +1,7 @@
 //Lendo uma paralavra no console do html
+//aul 01
+
+/*
 console.log ("Hello, Java Script");
 
 //Declaração de Variavel
@@ -49,7 +52,7 @@ console.log(itemNome);
     Lembrando que um objeto é um conjunto de informações,
     referentes a uma determinada coisa
 */
-
+/*
 //EXEMPLO DE OBJETO
 
 let caneta = {
@@ -117,3 +120,24 @@ console.log (calculePorcentagem (100))
 
 //forma mais facil de exibir o valor na tela
 console.log (calculePorcentagem(100));
+
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Aula 02
+
+//OPERADORES LÓGICOS
+
+let numeroPrimeiro = 20;
+let numeroSegundo = 30;
+
+console.log  (numeroPrimeiro + numeroSegundo);
+console.log (numeroPrimeiro - numeroSegundo);
+console.log (numeroPrimeiro * numeroSegundo);
+console.log (numeroPrimeiro / numeroSegundo);
+
+let total = numeroPrimeiro + numeroSegundo;
+
+console.log (total);
+console.log (--total);
+console.log (++total);
