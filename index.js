@@ -201,7 +201,7 @@ console.log (numeroPrimeiro == numeroSegundo);
 */
 
 //OPERADOR TERNÁRIO
-
+/*
 let carro = 90;
 
 let velocidade = carro > 110 ? 'Acima da Velocidade' : 'Velocidade Normal';
@@ -213,3 +213,25 @@ let carros = 190;
 let velocidades = carros > 110 ? 'Acima da Velocidade' : 'Velocidade Normal';
 
 console.log (velocidades);
+*/
+
+//OPERADOR LÓGICO
+/*
+let idadeMinima = false;
+let tituloEleitor = true;
+
+
+let podeVota = idadeMinima || tituloEleitor;
+console.log ('Pode Votar: ' + podeVota);
+
+let podeViajar = !podeVota;
+console.log ('Pode viajar: ' + podeViajar);
+
+
+let podeVotar = idadeMinima && tituloEleitor;
+console.log ('Pode Votar: ' + podeVotar);
+
+let podeViaja = !podeVotar;
+console.log ('Pode viajar: ' + podeViaja);
+*/
+
