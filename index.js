@@ -39,6 +39,9 @@ itemNome = null;
 console.log(itemNome);
 
 
+
+//VARIAVEIS DE REFERENCIA
+
 /*
     Criando um objeto
     Lembrando que um objeto é um conjunto de informações,
@@ -56,6 +59,24 @@ let caneta = {
 
 console.log (caneta);
 
+//aqui ele está alterando uma variavel que possui dentro do objeto, no caso a cor era vermelha, passou a ser Branca
 caneta.corItem = 'branco';
-
 console.log (caneta);
+
+
+//ARRAY
+
+//forma que declaramos um array
+let amigos = ['Marcos', 'Joao', 'Amanda', 'Poliana'];
+
+//exibindo na tela os nomes do array
+console.log (amigos);
+
+//usamos dessa forma para que mostro somente o numero que foi inserido ali da lista na tela
+console.log (amigos [3]);
+
+//fazemos dessa forma para trocar o nome do array que queremos, usamos o numero para se referir
+amigos[2] = 'Mickelly';
+console.log (amigos);
+
+console.log (amigos [2]);
