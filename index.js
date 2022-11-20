@@ -16,6 +16,8 @@ console.log (nomeCarro);
 const valorCorra = '60';
 console.log (valorCorra);
 
+
+
 //MODELOS DE VARIAVEIS PRIMITIVAS
 
 //Variavel de String
@@ -80,3 +82,25 @@ amigos[2] = 'Mickelly';
 console.log (amigos);
 
 console.log (amigos [2]);
+
+//FUNÇÃO 
+ 
+//fução normal sem parametro
+function statusProposta() {
+    console.log('APROVADO');
+}
+statusProposta();
+
+//Inserimos o parametro da função 
+function statusProposta(status) {
+    console.log('Proposta' + status);
+}
+//inserimos  argumento do parametro a cima
+statusProposta('Aprovada');
+
+//Inserimos o parametro da função  PODEMOS TER MAIS DE UM PARAMETRO, QUANTOS NECESSÁRIOS
+function statusProposta(status, valor, cor) {
+    console.log('Proposta' + status + ' Valor do Bem: '  + valor, 'Cor: ' + cor);
+}
+//inserimos  argumento dos parametros a cima
+statusProposta(' Aprovada', 20000, 'azul');
