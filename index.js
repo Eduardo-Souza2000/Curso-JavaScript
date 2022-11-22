@@ -235,3 +235,42 @@ let podeViaja = !podeVotar;
 console.log ('Pode viajar: ' + podeViaja);
 */
 
+//OPERADOR LÓGICO SELECIONANDO COR
+/*
+ //let corCliente = 'white';
+ let corCliente = undefined;
+ let corEstoque = 'Black';
+
+ let corVendida = corCliente || corEstoque;
+
+ console.log (corVendida);
+ */
+
+ //PRECEDENCIA DOS OPERADORES
+  
+ /*
+
+ //FOR IN LOOP
+ 
+ const Carro = {
+    modelo: 'fiat',
+    ano: '2005',
+    km: 135000
+ }
+
+ for (let i in Carro){
+    console.log(i + ' ' + Carro[i])
+ }
+ */
+
+ // FOR OF LOOP
+
+ const amigos = ['marcos', 'joao', 'ana'];
+
+ for (let i of amigos){
+    console.log(i);
+ }
+
+ for (let i in amigos){
+    console.log(i);
+ }
