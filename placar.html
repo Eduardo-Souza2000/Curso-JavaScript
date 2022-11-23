@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="placar.css">
     <title>Placar Truco</title>
-    <style>
-        body {
-            background: blue;
-        }
-    </style>
 </head>
 
 <body>
-    
-    <input type="number" id="numero_1">
-    <input type="number" id="numero_2">
-    <input type="button" id="button_soma" onclick="somar()">
 
-    <div id="resultato"></div>
+    <main>
+
+        <h1>PLACAR</h1>
+
+        <div class="retangulo">
+
+            <div class="retango_time1">
+                <div id="numero_1"></div>
+                <input type="number" id="nome_1" onclick="nome_time1" value="">
+            </div>
+
+            <div class="retango_time2">
+                <div id="numero_2"></div>
+                <input type="text" id="nome_2" onclick="nome_time2" value="">
+            </div>
+
+        </div>
+
+        <input type="button" id="campo_botao" onclick= "zerar()" value="">
+    
+    </main>
+
+    <!--<div id="resultato"></div>-->
     <script src="placar.js"></script>
     
 </body>

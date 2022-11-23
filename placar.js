@@ -1,12 +1,38 @@
-
+document.getElementById("campo_botao").value= "ZERAR";
 let campo_numero1 = document.getElementById("numero_1");
 let campo_numero2 = document.getElementById("numero_2");
+let campo_botao = document.getElementById("campo_botao");
 let campo_resultado = document.getElementById("resultato");
-console.log (campo_numero1.value);
-console.log (campo_numero2.value);
 
-function somar(){
-    let valor_soma = Number (campo_numero1.value) + Number (campo_numero2.value);
-    campo_resultado.innerHTML = 'valor da soma éh: ' + valor_soma;
-    console.log (campo_numero1.value)
+
+
+
+function zerar(){
+    campo_numero1.value= "0";
+    campo_numero2.value= "0";
 }
+
+
+/*
+campo_botao.addEventListener('mouseover',ficar_verde);
+campo_botao.addEventListener('mouseout',ficar_amarelo);
+campo_botao.addEventListener('mousedown',ficar_vermelho);
+campo_botao.addEventListener('mouseup',ficar_azul);
+
+
+function ficar_verde (){
+    campo_botao.style.background="green";
+ }
+
+function ficar_amarelo(){
+    campo_botao.style.background= "yellow";
+}
+
+function ficar_vermelho(){
+    campo_botao.style.background= "red";
+}
+
+function ficar_azul(){
+    campo_botao.style.background= "blue";
+}
+*/

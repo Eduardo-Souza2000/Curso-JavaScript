@@ -263,14 +263,19 @@ console.log ('Pode viajar: ' + podeViaja);
  }
  */
 
+/*
  // FOR OF LOOP
 
  const amigos = ['marcos', 'joao', 'ana'];
 
+ //of ele aponta os nomes 
  for (let i of amigos){
     console.log(i);
  }
-
+//aqui ele mostra numeros
  for (let i in amigos){
     console.log(i);
  }
+ */
+
+ 
