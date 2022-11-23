@@ -22,6 +22,10 @@ function nome_time1(){
     let resultado1 = Number(campo_numero1.value ++);
     campo_numero1.innerHTML= resultado1;
 
+    if (resultado1 > 12 ) {
+        console.log ('voce venceu');
+    }
+
 }
 
 function nome_time2(){
@@ -37,6 +41,11 @@ function nome_time2(){
     let resultado2 = Number(campo_numero2.value ++);
     campo_numero2.innerHTML= resultado2;
 
+    if (resultado2 > 2 ) {
+        console.log ('voce venceu');
+        zerar();
+    }
+
 }
 
 function zerar(){
@@ -49,13 +58,12 @@ function zerar(){
     campo_numero2.innerHTML= 0;
     nome2.value= ('');
     nome_2.style.background="";
- }
+}
+
+
 
  
-if (Number (campo_numero1.value) > Number (campo_numero2.value)){
-    nome_1.style.background="red";
-    
-}
+
 
 /*
 campo_botao.addEventListener('mouseover',ficar_verde);

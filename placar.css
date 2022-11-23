@@ -41,8 +41,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: 10vh;
-    
+    font-size: 10vh;    
 }
 
 .retango_time2{
@@ -52,12 +51,11 @@ h1 {
     justify-content: space-between;
     align-items: center;
     font-size: 10vh;
-    
 }
 
 input {
     text-align: center;
-    font-size: 3vw;
+    font-size: 50%;
     width: 30%;
 }
 
@@ -67,7 +65,7 @@ input {
     font-size: 1vw;
     margin: 0%;
     width: 5vw;
-    height: 30px;
+    height: 3vw;
     border-radius: 5px;
 }
 
