@@ -28,7 +28,7 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     width: 50%;
-    height: 20vh;
+    height: 30vh;
     margin: 0%;
     border: 1px solid black;  
     border-radius: 10px;
@@ -41,7 +41,8 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 40%;
+    font-size: 10vh;
+    
 }
 
 .retango_time2{
@@ -50,28 +51,23 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 40%;
+    font-size: 10vh;
+    
 }
 
 input {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    width: 20%;
+    text-align: center;
+    font-size: 3vw;
+    width: 30%;
 }
 
 #campo_botao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     color: blue;
-    font-size: 80%;
+    font-size: 1vw;
     margin: 0%;
-    width: 20vw;
+    width: 5vw;
+    height: 30px;
+    border-radius: 5px;
 }
 
-.result_1{
-    font-size: 100px;
-}
