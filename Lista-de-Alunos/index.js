@@ -17,30 +17,19 @@ pai_section.appendChild(filho_p);
 
 let pai_tabela = document.getElementById ("tabela");
 let pai_linha = document.getElementById ("linha-tabel");
-let filho_linhaid = document.getElementById ("id");
+let filho_linhaid = document.getElementById ("td");
 let filho_linhaNome = document.getElementById ("nome");
 let filho_linhaCurso = document.getElementById ("curso");
 let filho_linhaEmail = document.getElementById ("email");
 
 
-/*for ( i=0 ; i < 1 ; i++) {
-let Id = document.createTextNode = window.prompt ('digite um id');
-let Nome = document.createTextNode = window.prompt ('digite um nome');
-let Curso = document.createTextNode = window.prompt ('digite um curso');
-let Email = document.createTextNode = window.prompt ('digite um email');
-}*/
-
 
 function cadastra(){ 
-let Id = document.createTextNode (window.prompt ('Digite o numero do id'));
-let Nome = document.createTextNode(window.prompt ('Digite o nome '));
-let Curso = document.createTextNode(window.prompt ('Digite o curso'));
-let Email = document.createTextNode(window.prompt ('Digite o Email'));
-pai_tabela = document.createElement (pai_linha);
-filho_linhaid.appendChild (Id);
-filho_linhaNome.appendChild (Nome);
-filho_linhaCurso.appendChild (Curso);
-filho_linhaEmail.appendChild (Email);
+document.createElement ()
+filho_linhaid = document.createTextNode (window.prompt ('Digite o numero do id'));
+filho_linhaNome = document.createTextNode(window.prompt ('Digite o nome '));
+filho_linhaCurso = document.createTextNode(window.prompt ('Digite o curso'));
+filho_linhaEmail = document.createTextNode(window.prompt ('Digite o Email'));
 
 
 pai_linha.appendChild(filho_linhaid);
