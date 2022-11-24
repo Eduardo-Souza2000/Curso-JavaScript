@@ -1,44 +1,42 @@
-/*
-//PRIMEIRO SELECIONAMOS O PAI
-let pai_section = document.getElementById ("section");
+let tabela ={
 
-//CRIAMOS O ELEMENTO HTML
-let filho_p = document.getElementById ("p");
+    {
+        id: 0,
+        nome: "eduardo",
+        curso: "Engenharia",
+        email: 'eduardosouza.foz2014@gmail.com'
+    }
 
-//CRIANOS O ELEMENTO HTML -> TEXTO
-let filho_p_texto = document.createTextNode("Texto criado pelo JS");
 
-//RELACIONA O ELEMENTO TEXTO COMO FILHO DA TAG HTML CRIADA <P>
-filho_p.appendChild (filho_p_texto);
+}
 
-//RELACIONA A TAG HTML <P> COMO FILHO DA TAG HTML SECTION
-pai_section.appendChild(filho_p);
-*/
+
 
 let pai_tabela = document.getElementById ("tabela");
-let pai_linha = document.getElementById ("linha-tabel");
-let filho_linhaid = document.getElementById ("td");
-let filho_linhaNome = document.getElementById ("nome");
-let filho_linhaCurso = document.getElementById ("curso");
-let filho_linhaEmail = document.getElementById ("email");
 
+
+
+    let titulo_texto = document.createTextNode (noticias.titulo)
+    titulo.appendChild (titulo_texto)
+
+    let descricao = document.createElement("p")
+    descricao.className = "noticias-paragrafo"
+    let descricao_texto = document.createTextNode (noticias.descricao)
+    descricao.appendChild (descricao_texto)
+
+
+    article.appendChild(titulo)
+    article.appendChild(descricao)
+
+    section_elemente.appendChild(article)
 
 
 function cadastra(){ 
-document.createElement ()
-filho_linhaid = document.createTextNode (window.prompt ('Digite o numero do id'));
-filho_linhaNome = document.createTextNode(window.prompt ('Digite o nome '));
-filho_linhaCurso = document.createTextNode(window.prompt ('Digite o curso'));
-filho_linhaEmail = document.createTextNode(window.prompt ('Digite o Email'));
+    let linha = document.createElement ("<tr>")
+    let coluna = document.createElement ("<td>")
+    let coluna_texto = document.createTextNode (tabela.id)
 
 
-pai_linha.appendChild(filho_linhaid);
-pai_linha.appendChild (filho_linhaNome);
-pai_linha.appendChild (filho_linhaCurso);
-pai_linha.appendChild (filho_linhaEmail);
-
-
-pai_tabela.appendChild(pai_linha);
 }
 
 
