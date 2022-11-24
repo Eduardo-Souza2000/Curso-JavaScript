@@ -15,6 +15,48 @@ filho_p.appendChild (filho_p_texto);
 pai_section.appendChild(filho_p);
 */
 
+let pai_tabela = document.getElementById ("tabela");
+let pai_linha = document.getElementById ("linha-tabel");
+let filho_linhaid = document.getElementById ("id");
+let filho_linhaNome = document.getElementById ("nome");
+let filho_linhaCurso = document.getElementById ("curso");
+let filho_linhaEmail = document.getElementById ("email");
+
+
+/*for ( i=0 ; i < 1 ; i++) {
+let Id = document.createTextNode = window.prompt ('digite um id');
+let Nome = document.createTextNode = window.prompt ('digite um nome');
+let Curso = document.createTextNode = window.prompt ('digite um curso');
+let Email = document.createTextNode = window.prompt ('digite um email');
+}*/
+
+
+let Id = document.createTextNode ("2");
+let Nome = document.createTextNode("edu");
+let Curso = document.createTextNode("administração");
+let Email = document.createTextNode("gmail@gmail.com");
+
+pai_linha.appendChild (Node);
+
+
+filho_linhaid.appendChild (Id);
+filho_linhaNome.appendChild (Nome);
+filho_linhaCurso.appendChild (Curso);
+filho_linhaEmail.appendChild (Email);
+
+
+pai_linha.appendChild(filho_linhaid);
+pai_linha.appendChild (filho_linhaNome);
+pai_linha.appendChild (filho_linhaCurso);
+pai_linha.appendChild (filho_linhaEmail);
+
+
+pai_tabela.appendChild(pai_linha);
+
+
+
+
+/*
 
 let aluno = {
 
@@ -61,3 +103,5 @@ for (pessoas of alunos){
     console.log (pessoas);
 
 }
+
+*/
