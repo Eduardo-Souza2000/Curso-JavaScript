@@ -31,14 +31,12 @@ let Email = document.createTextNode = window.prompt ('digite um email');
 }*/
 
 
-let Id = document.createTextNode ("2");
-let Nome = document.createTextNode("edu");
-let Curso = document.createTextNode("administração");
-let Email = document.createTextNode("gmail@gmail.com");
-
-pai_linha.appendChild (Node);
-
-
+function cadastra(){ 
+let Id = document.createTextNode (window.prompt ('Digite o numero do id'));
+let Nome = document.createTextNode(window.prompt ('Digite o nome '));
+let Curso = document.createTextNode(window.prompt ('Digite o curso'));
+let Email = document.createTextNode(window.prompt ('Digite o Email'));
+pai_tabela = document.createElement (pai_linha);
 filho_linhaid.appendChild (Id);
 filho_linhaNome.appendChild (Nome);
 filho_linhaCurso.appendChild (Curso);
@@ -52,6 +50,10 @@ pai_linha.appendChild (filho_linhaEmail);
 
 
 pai_tabela.appendChild(pai_linha);
+}
+
+
+
 
 
 
