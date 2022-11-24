@@ -41,9 +41,11 @@ function nome_time2(){
     let resultado2 = Number(campo_numero2.value ++);
     campo_numero2.innerHTML= resultado2;
 
-    if (resultado2 > 2 ) {
+    if (resultado2 > 12) {
+
         console.log ('voce venceu');
         zerar();
+        
     }
 
 }
