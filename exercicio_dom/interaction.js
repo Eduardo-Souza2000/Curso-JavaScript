@@ -48,7 +48,32 @@ let ITENS_LOJA = [
         descricao:"Vinho que harmoniza muito bem com carnes vermelhas "
     }
 
-]
+];
 
-let
 
+
+for (let lista of ITENS_LOJA) {
+    console.log (lista)
+    exibe_tela(lista)
+}
+
+function exibe_tela(lista){
+    let pai_section = document.getElementById ("lista_icones");
+
+    let cria_elemento = document.createElement ("article");
+    cria_elemento.className = "retangulo";
+    cria_elemento.innerHTML = `
+        <img src=${lista.url_img}>   
+        <p class="titulo"> ${lista.nome} </p>
+        <article1 class="preco">
+            <p class="preco_texto"> Preço:</p>
+            <p class="preco_valor"> R$ ${lista.preco}</p>
+        </article1>
+        <article class="descricao">
+            <p class="descricao_titulo">Descrição:</p>
+            <p class="descricao_texto">${lista.descricao}r</p>
+        </article>  `
+
+    pai_section.appendChild (cria_elemento);
+
+}
