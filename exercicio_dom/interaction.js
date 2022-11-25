@@ -47,4 +47,8 @@ let ITENS_LOJA = [
         url_img:"./img/vinho.webp",
         descricao:"Vinho que harmoniza muito bem com carnes vermelhas "
     }
+
 ]
+
+let
+
