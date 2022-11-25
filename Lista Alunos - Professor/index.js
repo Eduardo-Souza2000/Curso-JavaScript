@@ -46,7 +46,7 @@ let tamanho_noticias = noticias.length;
 
 for (i=0 ; i <tamanho_noticias ; i++) {
 
-    criar_noticias(noticias[i]);
+    criar_noticias(noticias[i])
     console.log(noticias[i])
 }
 
