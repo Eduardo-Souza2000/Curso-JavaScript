@@ -48,15 +48,15 @@ let ITENS_LOJA = [
         descricao:"Vinho que harmoniza muito bem com carnes vermelhas "
     }
 
-];
+]
 
-
+/*
 
 for (let lista of ITENS_LOJA) {
     console.log (lista)
     exibe_tela(lista)
-}
-
+}*/
+/*
 function exibe_tela(lista){
     let pai_section = document.getElementById ("lista_icones");
 
@@ -71,9 +71,84 @@ function exibe_tela(lista){
         </article1>
         <article class="descricao">
             <p class="descricao_titulo">Descrição:</p>
-            <p class="descricao_texto">${lista.descricao}r</p>
+            <p class="descricao_texto">${lista.descricao}</p>
         </article>  `
 
     pai_section.appendChild (cria_elemento);
+
+}
+*/
+
+let pai_todos = document.getElementById ("sessao-venda");
+
+let tamanho = ITENS_LOJA.length;
+
+for (i=0 ; i < tamanho ; i++){
+    
+    exibir (ITENS_LOJA[i]);
+    console.log(ITENS_LOJA[i])
+}
+
+function exibir (ITENS_LOJA) {
+    let pai_todos = document.getElementById ("sessao-venda");
+
+    let cria_secao = document.getElementById ("lista_icones"); 
+
+    let criar_retangulo = document.createElement ("article");
+    criar_retangulo.className = "retangulo";
+
+    let cria_img = document.createElement ("img");
+    cria_img.innerHTML: src = ITENS_LOJA.url_img;
+
+    let cria_titulo = document.createElement ("p");
+    cria_titulo.className = "titulo";
+    let cria_titulo_lista = document.createTextNode(ITENS_LOJA.nome);
+
+    let cria_preco = document.createElement ("article");
+    cria_preco.className = "preco";
+
+    let texto_preco = document.createElement ("p");
+    texto_preco.className = "preco_texto";
+    let texto_preco_pronto = document.createTextNode("Preço: ");
+
+    let texto_valor = document.createElement ("p");
+    texto_valor.className = "preco_valor";
+    let texto_valor_lista = document.createTextNode("R$: " + ITENS_LOJA.preco);
+
+    let descricao = document.createElement ("article");
+    descricao.className = "descricao";
+
+    let texto_descricao = document.createElement ("p");
+    texto_descricao.className = "descricao_titulo";
+    let texto_descricao_pronta = document.createTextNode(" Descrição: ");
+
+    let texto_descricao_lista = document.createElement ("p");
+    texto_descricao_lista.className = "descricao_text";
+    let texto_descricao_lista_inserido = document.createTextNode(ITENS_LOJA.descricao);
+
+
+    pai_todos.appendChild (cria_secao);
+
+    cria_secao.appendChild (criar_retangulo);
+
+    criar_retangulo.appendChild (cria_img);
+    criar_retangulo.appendChild (cria_titulo);
+    criar_retangulo.appendChild (cria_preco);
+    criar_retangulo.appendChild (descricao);
+
+    cria_titulo.appendChild(cria_titulo_lista);
+
+    cria_preco.appendChild (texto_preco);
+    cria_preco.appendChild (texto_valor);
+    texto_preco.appendChild (texto_preco_pronto);
+    texto_valor.appendChild (texto_valor_lista);
+
+    descricao.appendChild (texto_descricao);
+    descricao.appendChild (texto_descricao_lista);
+    texto_descricao.appendChild(texto_descricao_pronta);
+    texto_descricao_lista.appendChild (texto_descricao_lista_inserido);
+
+
+
 
 }
