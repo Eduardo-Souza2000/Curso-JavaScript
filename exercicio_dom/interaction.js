@@ -123,7 +123,7 @@ function exibir (ITENS_LOJA) {
     let texto_descricao_pronta = document.createTextNode(" Descrição: ");
 
     let texto_descricao_lista = document.createElement ("p");
-    texto_descricao_lista.className = "descricao_text";
+    texto_descricao_lista.className = "descricao_texto";
     let texto_descricao_lista_inserido = document.createTextNode(ITENS_LOJA.descricao);
 
 
