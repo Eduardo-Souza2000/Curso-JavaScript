@@ -79,7 +79,6 @@ function exibe_tela(lista){
 }
 */
 
-let pai_todos = document.getElementById ("sessao-venda");
 
 let tamanho = ITENS_LOJA.length;
 
@@ -98,7 +97,8 @@ function exibir (ITENS_LOJA) {
     criar_retangulo.className = "retangulo";
 
     let cria_img = document.createElement ("img");
-    cria_img.innerHTML: src = ITENS_LOJA.url_img;
+    cria_img.setAttribute("src",ITENS_LOJA.url_img);
+   
 
     let cria_titulo = document.createElement ("p");
     cria_titulo.className = "titulo";
@@ -147,8 +147,5 @@ function exibir (ITENS_LOJA) {
     descricao.appendChild (texto_descricao_lista);
     texto_descricao.appendChild(texto_descricao_pronta);
     texto_descricao_lista.appendChild (texto_descricao_lista_inserido);
-
-
-
 
 }
