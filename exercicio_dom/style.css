@@ -1,0 +1,77 @@
+body{
+    font: normal 15px Arial;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao_texto{
+    margin: 0%;
+    font-size: 0.90vw;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.descricao_titulo {
+    font-weight: 750;
+    font-size: 0.90vw;
+}
+
+img {
+    margin-top: 5px;
+    width: 10vw;
+}
+
+#lista_icones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.preco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 10vw;
+}
+
+.preco_texto {
+    font-weight: 750;
+    font-size: 1vw;
+}
+
+.preco_valor {
+    font-size: 1vw;
+}
+
+.retangulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 15vw;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#sessao-venda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.titulo{
+    font-size: 1.1vw;
+    font-weight: 900;
+}
+
+
+
+
+
+
