@@ -61,4 +61,71 @@ console.log(livro1);
 console.log(livro2);
 */
 
+/*
 
+//Propriedades do OBJETO 
+//adiciuonando propriedades depois que o objeto foi criado
+
+function criarLivros(titulo, autor, paginas) {
+
+
+
+    const livro = {
+
+        livroTitulo: titulo,
+        livroAutor: autor,
+        livroPaginas: paginas,
+
+        exibeLivro: function (){ 
+            console.log ('Printing...')
+        }
+    }
+
+   return livro;
+}
+
+const livro1 = criarLivros('o cortiço', 'james', 306);
+const livro2 = criarLivros('A cabana', 'Napoleao', 556);
+
+livro1.color = 'red';
+
+console.log(livro1);
+console.log(livro2);
+*/
+
+
+/*
+
+//CONSTRUCTOR
+
+function CriarLivros(titulo, autor, paginas) {
+
+    this.livroTitulo = titulo;
+    this.livroAutor= autor;
+    this.livroPaginas= paginas;
+}
+
+const livro1 = new CriarLivros ('o cortiço', 'james', 306);
+
+
+
+console.log(livro1);
+*/
+
+/*
+
+//OBJETOS BUILT IN  //OBJETOS BUILT IN //OBJETOS BUILT IN //OBJETOS BUILT IN //OBJETOS BUILT IN 
+
+console.log (Math.max(1,2,9,80,105,558,565,566))
+
+console.log (Math.min(1,2,9,80,105,558,565,566))
+
+*/
+
+//OBJETOS BUILT IN ---->>> STRIONG //OBJETOS BUILT IN ---->>> STRIONG //OBJETOS BUILT IN ---->>> STRIONG //OBJETOS BUILT IN ---->>> STRIONG
+
+let mensagem = 'Oi meu nome é Eduardo';
+
+console.log(mensagem.startsWith ('Oi'));
+console.log (mensagem.length)
+console.log (mensagem.includes ('Eduardo'))
