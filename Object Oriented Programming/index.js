@@ -122,6 +122,7 @@ console.log (Math.min(1,2,9,80,105,558,565,566))
 
 */
 
+/*
 //OBJETOS BUILT IN ---->>> STRIONG //OBJETOS BUILT IN ---->>> STRIONG //OBJETOS BUILT IN ---->>> STRIONG //OBJETOS BUILT IN ---->>> STRIONG
 
 let mensagem = 'Oi meu nome é Eduardo';
@@ -129,3 +130,17 @@ let mensagem = 'Oi meu nome é Eduardo';
 console.log(mensagem.startsWith ('Oi'));
 console.log (mensagem.length)
 console.log (mensagem.includes ('Eduardo'))
+*/
+ 
+//TEMPLATE LITERALS //TEMPLATE LITERALS  //TEMPLATE LITERALS  //TEMPLATE LITERALS
+
+let firstName = 'eduardo'
+
+const email = 'Oi senhor ' + firstName + ', \nA reunião está confirmada, \nATT: EDUARDO ';
+
+const email2 = `Oi senhor ${firstName}, 
+A reunião está confirmada, 
+ATT: EDUARDO `;
+
+console.log (email)
+console.log (email2)
