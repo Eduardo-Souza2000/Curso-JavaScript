@@ -131,6 +131,8 @@ console.log(mensagem.startsWith ('Oi'));
 console.log (mensagem.length)
 console.log (mensagem.includes ('Eduardo'))
 */
+
+/*
  
 //TEMPLATE LITERALS //TEMPLATE LITERALS  //TEMPLATE LITERALS  //TEMPLATE LITERALS
 
@@ -144,3 +146,6 @@ ATT: EDUARDO `;
 
 console.log (email)
 console.log (email2)
+
+*/
+
