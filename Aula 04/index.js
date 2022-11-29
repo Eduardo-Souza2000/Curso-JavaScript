@@ -98,7 +98,7 @@ let num = [5,6,7,8]
 
 console.log (num);
 */
-
+/*
 //CONCATENAR UMA ARRAY  //CONCATENAR UMA ARRAY  //CONCATENAR UMA ARRAY  //CONCATENAR UMA ARRAY
 
 let num = [5,6,7,8];
@@ -106,4 +106,35 @@ let letras = ['a', 'b', 'c'];
 
 let todos = num.concat(letras);
 
-console.log (todos)
+//fala onde vai começar , onde vai terminar antes do 5 no caso
+let metade = todos.splice(3,5);
+
+console.log (todos);
+
+console.log (metade);
+
+*/
+/*
+//JOIN ARRAY //JOIN ARRAY  //JOIN ARRAY  //JOIN ARRAY  //JOIN ARRAY 
+
+let clientes = ['andre','jose','marcela'];
+console.log (clientes);
+
+//dentro dos parenteses eu coloco o que precisa ser adcionado
+let clientesJoin = clientes.join (',');
+
+console.log (clientesJoin);
+*/
+
+
+//ORGANIZANDO AS ARRAY
+
+let clientes = ['eduardo', 'mickelly', 'samir', 'tailyne', 'joao'];
+console.log (clientes);
+
+clientes.sort();
+
+console.log (clientes);
+
+clientes.reverse();
+console.log (clientes);
