@@ -140,10 +140,28 @@ clientes.reverse();
 console.log (clientes);
 */
 
+ /*
+//VERIFICA ELENMENTOS DA ARRAY - EVERY //VERIFICA ELESMENTOS DA ARRAY - EVERY  //VERIFICA ELESMENTOS DA ARRAY - EVERY 
+//AQUI ELE EXIBE SOMENTE TRUE OU FALSE
 const tempLondres = [18,13,8,-9];
 
 const tempPositiva = tempLondres.every(function(value){
     return value >= 0;
 });
+
+console.log (tempPositiva);
+
+*/
+
+//VERIFICA ELENMENTOS DA ARRAY - FILTER //VERIFICA ELESMENTOS DA ARRAY - FILTER  //VERIFICA ELESMENTOS DA ARRAY - FILTER 
+//AQUI ELE EXIBE OS NUMEROS POSITIVOS NA TELA 
+
+const tempLondres = [18,13,8,-9];
+
+const tempPositiva = tempLondres.filter(function(value){
+    return value >= 0;
+});
+
+const tempPositiva = tempLondres.filter(value => value >= 0);
 
 console.log (tempPositiva);
