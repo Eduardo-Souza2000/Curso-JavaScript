@@ -66,6 +66,8 @@ console.log (filme.find(filme => filme.nomeFilme == 'Venom'))
 
 */
  
+
+/*
 //REMOVENDO ITEM PELA ARRAY //REMOVENDO ITEM PELA ARRAY  //REMOVENDO ITEM PELA ARRAY 
 const numero = [5,6,7,8];
 
@@ -76,8 +78,32 @@ const numero = [5,6,7,8];
 //const final = numero.shift()
 
 //aqui ele fala o seguinte, no index 2 remova 1 item
+//aqui ele fala remova o item a partir de:   / depois a quantidade que quer remover
 const final = numero.splice (2,1)
 
 
 console.log (numero);
 console.log(final)
+*/
+
+/*
+//COMO ZERAR UMA ARRAY  //COMO ZERAR UMA ARRAY  //COMO ZERAR UMA ARRAY 
+
+let num = [5,6,7,8]
+
+//num = [];
+//num.length = 0;
+//remova do index zero at´´e o tamanho maximo da array
+//num.splice (0,num.length);
+
+console.log (num);
+*/
+
+//CONCATENAR UMA ARRAY  //CONCATENAR UMA ARRAY  //CONCATENAR UMA ARRAY  //CONCATENAR UMA ARRAY
+
+let num = [5,6,7,8];
+let letras = ['a', 'b', 'c'];
+
+let todos = num.concat(letras);
+
+console.log (todos)
