@@ -126,7 +126,7 @@ let clientesJoin = clientes.join (',');
 console.log (clientesJoin);
 */
 
-
+/*
 //ORGANIZANDO AS ARRAY
 
 let clientes = ['eduardo', 'mickelly', 'samir', 'tailyne', 'joao'];
@@ -138,3 +138,12 @@ console.log (clientes);
 
 clientes.reverse();
 console.log (clientes);
+*/
+
+const tempLondres = [18,13,8,-9];
+
+const tempPositiva = tempLondres.every(function(value){
+    return value >= 0;
+});
+
+console.log (tempPositiva);
