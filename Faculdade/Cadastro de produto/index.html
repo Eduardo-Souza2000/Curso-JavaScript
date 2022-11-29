@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Cadastro de produto/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" method="POST">
+
+        <fieldset >
+
+            <legend> Cadastro de produto</legend>
+
+            <label for="nome_produto"> Nome do Produto:</label>
+            <input type="text" id="nome_produto"><br>
+
+            <label for="data_compra"> Data da Compra:</label>
+            <input type="date" name="data" id="data_compra"><br>
+
+            <label for="foto_produto">Foto:</label>
+            <input type="file" name="foto" id="foto_produto"><br>
+
+            <label for="quantidade_produto">Quantidade:</label>
+            <input type="number" name="quantidade" id="quantidade_produto"><br>
+
+            <label for="valor_produto">Valor:</label>
+            <input type="number" name="valor" id="valor_produto"><br>
+
+
+            
+
+            <fieldset>
+                <legend> Tamanho do Item</legend>
+                <label for="tam_p">P</label>
+                <input type="radio" name="tam_item" id="tam_p" value="p">
+
+                <label for="tam_m">M</label>
+                <input type="radio" name="tam_item" id="tam_m" value="m">
+
+                <label for="tam_g">G</label>
+                <input type="radio" name="tam_item" id="tam_g" value="g">
+            
+            </fieldset>
+
+            <fieldset>
+                
+                <legend> Cuidados</legend>
+                <label for="cuidade_fragil"> Frágil</label>
+                <input type="checkbox" name="fragil" id="cuidado_fragil" >
+
+                <label for="cuidade_explosivo"> Explosivo</label>
+                <input type="checkbox" name="explosivo" id="cuidade_explosivo" >
+
+                <label for="cuidade_liquido"> Liquído</label>
+                <input type="checkbox" name="liquido" id="cuidade_liquido" >
+
+
+            </fieldset>
+
+            <label> Descrição</label>
+            <textarea> Faça uma Descrição...</textarea>
+
+            <label> Setor Responsável</label>
+
+            <select name="select">
+
+                <option value="Eng.soft">Engenharia de Software</option>
+                <option value="Administração">Administração</option>
+                <option value="direito">Direito</option>
+                <option value="agronomia">Agronomia</option>
+
+            </select>
+
+        
+
+            <input type="submit">
+
+        </fieldset>
+
+        
+    </form>
+    
+    <script src="../Cadastro de produto/index.js"></script>
+</body>
+</html>
