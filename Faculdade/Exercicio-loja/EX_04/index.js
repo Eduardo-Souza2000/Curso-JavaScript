@@ -13,6 +13,7 @@ criaFildset.innerHTML= `
 principal.appendChild(criaFildset);
 
 function calculaIdades (){
+    
     let idadeDiego = document.getElementById("idade_diego");
     let valorDiego = Number(idadeDiego.value);
 
