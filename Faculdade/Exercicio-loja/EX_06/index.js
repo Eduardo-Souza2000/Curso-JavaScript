@@ -19,7 +19,8 @@ retanguloLogin.innerHTML=`
 
     <fieldset class="botao">
         <input type="submit" value="OK" onclick="comparaLogin()">
-        <input type="submit" value="Limpar" onclick="">
+        <input type="submit" value="Limpar" onclick="apagaInput()">
+
     </fieldset>
 `
 
@@ -44,5 +45,14 @@ function comparaLogin(){
     } else{
         window.alert("LOGIN INVALIDO");
     }
+
+}
+
+
+function apagaInput(){
+
+    document.getElementById ("login_user").reset();
+    document.getElementById ("login_senha").reset();
+
 
 }
