@@ -30,11 +30,28 @@ function valorConta(){
 
 
 function exibeValor(){
+    
+    let saldo = document.getElementById("numero_saldo");
+    let valorSaldo = Number (saldo.value);
+
+    let debito = document.getElementById("numero_debito");
+    let valordebito = Number (debito.value);
+
+    let credito = document.getElementById("numero_credito");
+    let valorcredito = Number (credito.value);
+
+    let saldoAtual = valorSaldo - valordebito + valorcredito; 
 
     let exibe = document.createElement ("article");
 
     exibe.innerHTML= `
-        <p> O VALOR DO SALDO ATUAL: R$ </p>
+        <p> O VALOR DO SALDO ATUAL: R$ ${saldoAtual} </p>
     `
     principal.appendChild(exibe);
+
+    if (saldoAtual >= 0){
+        window.alert (" Parabéns SALDO POSITIVO");
+    } else {
+        window.alert ("Cuidado, SALDO NEGATIVO");
+    }
 }
