@@ -152,6 +152,7 @@ const tempPositiva = tempLondres.every(function(value){
 console.log (tempPositiva);
 
 */
+/*
 
 //VERIFICA ELENMENTOS DA ARRAY - FILTER //VERIFICA ELESMENTOS DA ARRAY - FILTER  //VERIFICA ELESMENTOS DA ARRAY - FILTER 
 //AQUI ELE EXIBE OS NUMEROS POSITIVOS NA TELA 
@@ -162,6 +163,8 @@ const tempPositiva = tempLondres.filter(function(value){
     return value >= 0;
 });
 
-const tempPositiva = tempLondres.filter(value => value >= 0);
+//DUAS FORMAS DE FAZER
+//const tempPositiva = tempLondres.filter(value => value >= 0);
 
 console.log (tempPositiva);
+*/
