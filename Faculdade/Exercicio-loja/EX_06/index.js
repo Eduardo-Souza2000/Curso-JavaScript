@@ -37,12 +37,12 @@ function comparaLogin(){
 
     if (comparaLogin === numLogin){
         if (numSenha === comparaSenha){
-            window.alert= ("ACESSO PERMITIDO");
+            window.alert("ACESSO PERMITIDO");
         }else{
-            window.alert= ("SENHA INVALIDA");
+            window.alert("SENHA INVALIDA");
         }
     } else{
-        window.alert=("LOGIN INVALIDO");
+        window.alert("LOGIN INVALIDO");
     }
 
 }
