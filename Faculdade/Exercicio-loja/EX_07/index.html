@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+</head>
+<body>
+    
+    <h5>
+        A prefeitura de uma cidade deseja fazer uma pesquisa entre seus habitantes. Faça
+        um algoritmos para coletar dados sobre o salário e número de filhos de cada
+        habitante e após as leituras, apresente:
+        a. Média de salário da população;
+        b. Média do número de filhos;
+        c. Maior salário dos habitantes;
+        d. Percentual de pessoas com salário menor que R$ 1.500,00.
+        Requisitos de entrega:
+        UC01 - Os dados devem ser apresentados na tabela após clicar no botão
+        ‘Adicionar’.
+        UC02 - Campo nome deve ser do tipo string e não pode ser adicionado um
+        valor em branco na tabela, um alerta deve ser disparado em tela para o
+        usuário caso isso ocorra;
+        UC03 - Campos número de filhos e salário devem ser do tipo numérico e
+        não podem ser negativos, um alerta deve ser disparado caso seja
+        informado um valor negativo;
+        UC04 - Informações gerais devem ser atualizadas após a inserção de um
+        novo dado na tabela ou clicando no botão “atualizar dados’.
+        3
+        UC05 - A página deve seguir o wireframe abaixo, a estilização é por conta
+        do desenvolvedor;
+    </h5>
+
+
+
+    <fieldset id="principal">
+
+        
+        <h1>Pesquisa entre habitantes</h1>
+
+      
+
+        <table id="table">
+            <tr>
+                <th> Nome</th>
+                <th> Numero de filhos</th>
+                <th> Salario </th>
+            </tr>
+        </table>
+
+        <article>
+            <h1>Informações gerais</h1>
+            <p>Média de salário da população:</p>
+            <p>Média do número de filhos:</p>
+            <p>Maior salário dos habitantes: </p>
+            <p>Percentual de pessoas com salario menor que R$ 1.500,00 :  </p>
+        </article>
+        <button type="submit" id="atualizaDados" >Atualizar dados</button>
+            
+
+        
+    </fieldset>
+
+    <script src="index.js"></script>
+</body>
+</html>
