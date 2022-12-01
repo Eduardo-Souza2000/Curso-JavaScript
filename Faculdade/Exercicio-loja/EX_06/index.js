@@ -1,6 +1,7 @@
 let principal = document.getElementById ("principal");
 
-let retanguloLogin = document.createElement("article");
+let retanguloLogin = document.createElement("form");
+
 
 retanguloLogin.innerHTML=`
 
@@ -13,36 +14,50 @@ retanguloLogin.innerHTML=`
         <input type="number" name="Usuario" id="login_user" value=""><br>
 
         <label>Senha</label><br>
-        <input type="number" name="Senha" id="login_senha" value=""><br>
+        <input type="password" name="Senha" id="login_senha" value=""><br>
 
     </fieldset>
 
     <fieldset class="botao">
-        <input type="submit" onclick="comparaLogin()" value="OK" >
-        <input type="submit" value="Limpar">
+        <button type="button" id="bot_ok"> OK </button>
+        <button type="button" id="bot_limpar"> Limpar </button>
+
     </fieldset>
 `
-
 principal.appendChild(retanguloLogin);
+
+
+let butOK = document.getElementById("bot_ok");
+butOK.addEventListener ("click", comparaLogin);
+
+let butLimpar = document.getElementById("bot_limpar");
+butLimpar.addEventListener ("click", limpar);
+
+
 
 function comparaLogin(){
 
     let login = document.getElementById ("login_user");
     let numLogin = Number(login.value);
-    let comparaLogin = 1234;
+    const comparaLogin = 1234;
 
     let senha = document.getElementById("login_senha");
     let numSenha = Number(senha.value);
-    let comparaSenha = 9999;
+    const comparaSenha = 9999;
+
 
     if (comparaLogin === numLogin){
         if (numSenha === comparaSenha){
-            window.alert= ("ACESSO PERMITIDO");
+            window.alert("ACESSO PERMITIDO");
         }else{
-            window.alert= ("SENHA INVALIDA");
+            window.alert("SENHA INVALIDA");
         }
     } else{
-        window.alert=("LOGIN INVALIDO");
+        window.alert("LOGIN INVALIDO");
     }
+}
 
+
+function limpar(){
+    retanguloLogin.reset();
 }
