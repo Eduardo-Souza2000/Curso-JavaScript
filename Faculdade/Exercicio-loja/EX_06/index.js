@@ -18,15 +18,15 @@ retanguloLogin.innerHTML=`
     </fieldset>
 
     <fieldset class="botao">
-        <input type="submit" value="OK" onclick="comparaLogin()">
-        <input type="submit" value="Limpar" onclick="">
+        <input type="submit" onclick="comparaLogin()" value="OK" >
+        <input type="submit" value="Limpar">
     </fieldset>
 `
 
 principal.appendChild(retanguloLogin);
 
 function comparaLogin(){
-    
+
     let login = document.getElementById ("login_user");
     let numLogin = Number(login.value);
     let comparaLogin = 1234;
