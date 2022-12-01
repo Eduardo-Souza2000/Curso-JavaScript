@@ -1,0 +1,16 @@
+
+#principal{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    width: 70vw;
+}
+.titulo_tabela{
+    background-color: blue;
+    color: white;
+    width: 70vw;
+}
