@@ -16,6 +16,19 @@ function calculaSalario(){
     let salarioHora = Number(salario.value);
     let horasTrabalhadas = Number (horas.value);
 
+    if (horasTrabalhadas < 0 || salarioHora < 0 ){
+        alert ("CAMPO INVALIDO");
+        return;
+
+    }
+
+    if(horasTrabalhadas == '' || salarioHora == ''){
+        alert ("CAMPO INVALIDO");
+        return;
+
+    }
+
+    
     if(horasTrabalhadas <= 160){
         let salarioMensal = salarioHora * 160;
 
