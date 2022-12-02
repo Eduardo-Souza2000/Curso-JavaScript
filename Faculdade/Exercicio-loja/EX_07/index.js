@@ -10,6 +10,18 @@ let nome = document.getElementById("nome");
 let filhos = document.getElementById("num_filhos");
 let salario = document.getElementById("salario");
 
+let armazenaDados=[
+
+    {
+        nome:"",
+        numFilhos: 0, 
+        numSalario: 0
+    }
+
+]
+
+
+
 
 
 function cadastroTabela(){
@@ -19,13 +31,13 @@ function cadastroTabela(){
         return;
     }
 
-    if(filhos.value == ("")){
-        alert("NUMERO DE FILHOS NÃO FOI PREENCHIDO");
+    if(filhos.value == ("") || filhos.value < 0 ){
+        alert("Campo de numeros de filhos Inválido");
         return;
     }
 
-    if(salario.value === ("")){
-        alert("VALOR DO SALÁRIO NÃO FOI PREENCHIDO");
+    if(salario.value === ("") || salario.value < 0){
+        alert("Campo do Salário Inválido");
         return;
     }
 
@@ -35,11 +47,17 @@ function cadastroTabela(){
     criaLinha.innerHTML=`
         <td>${nome.value}</td>
         <td>${filhos.value}</td>
-        <td>${salario.value}</td>
+        <td>R$ ${salario.value}</td>
     `
     tabela.appendChild(criaLinha);
-    
-    
 
+    
+ 
+    armazenaDados.nome = nome.value;
+    armazenaDados.numFilhos = filhos.value;
+    armazenaDados.numSalario = salario.value
+
+    armazenaDados.push(nome)
 }
+
 
