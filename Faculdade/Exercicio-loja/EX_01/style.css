@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(170, 175, 173);
+    display: flex;
+    justify-content: center;
+}
+
+#apresenta_dados{
+    background-image: linear-gradient(45deg, rgba(60, 209, 30, 0.973),rgb(31, 221, 41));
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    
+}
+
+#principal{
+    width: 50vw;
+    margin-top: 5vw;
+    background-image: linear-gradient(45deg, rgba(221, 6, 6, 0.61), rgb(44, 21, 21));
+    color: rgb(2, 19, 5);
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+
+.recebe_elementos{
+    width: 50.5vw;
+    background-image: linear-gradient(45deg, rgba(221, 6, 6, 0.61), rgb(44, 21, 21));
+
+}
+
+input{
+    border-radius:10px;
+    width: 13vw;
+    background-color: rgb(57, 228, 134);
+ }
+
+ button{
+    margin-top: 5px;
+    background-color: rgb(22, 146, 22);
+    border-radius: 5px;
+    height: 30px;
+    width: 10vw;
+    color: antiquewhite;
+    font-weight: 600;
+ }

@@ -1,28 +1,32 @@
 let pai = document.getElementById("form")
+
 let cria_principal = document.createElement ("fieldset");
+cria_principal.className="recebe_elementos"
 
 
 cria_principal.innerHTML = `
     <article class="recebe_dados">    
-        <input type="number" placeholder="VOTOS VÁLIDOS.." name="numero_eleitores_validos" id="num_validos" value="">
-        <input type="number" placeholder="VOTOS BRANCOS.." name="numero_eleitores_brancos" id="num_brancos" value="">
-        <input type="number" placeholder="VOTOS NULOS.."name="numero_eleitores_nulos" id="num_nulos" value="">
-        <input type="submit" onclick= "resultado()">
+        <input type="number" placeholder="VOTOS VÁLIDOS.." name="numero_eleitores_validos" id="num_validos"  value="">
+        <input type="number" placeholder="VOTOS BRANCOS.." name="numero_eleitores_brancos" id="num_brancos"  value="">
+        <input type="number" placeholder="VOTOS NULOS.."   name="numero_eleitores_nulos"   id="num_nulos"    value="">
+        <button type="submit" id="adicionar"> Calcular</button>
     </article>`
 
 pai.appendChild (cria_principal)
 
-
+let botAdicionar = document.getElementById ("adicionar");
+botAdicionar.addEventListener ('click', resultado);
 
 
 function resultado(){
+    //let regex = /[^0-9 \s]/;
+    //let verdFalse = regex.test(votosValidos.value);
     let votosValidos = document.getElementById ("num_validos");
     let votosBranco = document.getElementById ("num_brancos");
     let votosNulos = document.getElementById ("num_nulos");
+
     
     let totalVotos = parseInt(votosValidos.value) + parseInt(votosBranco.value)  + parseInt (votosNulos.value);
-  
-
     let porcentValidos = parseInt(votosValidos.value) * 100 / totalVotos;
     let porcentBrancos = parseInt(votosBranco.value) * 100 / totalVotos;
     let porcentNulo = parseInt(votosNulos.value) * 100 / totalVotos;
