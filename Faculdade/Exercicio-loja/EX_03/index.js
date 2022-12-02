@@ -3,14 +3,16 @@ let principal = document.getElementById ("principal");
 
 let fieldsetNumconta = document.createElement ("fieldset");
 
+
 fieldsetNumconta.innerHTML= `
     <legend> Bem Vindo Ao Nossso Banco</legend>
     <input type="number" placeholder="Digite o nº da conta..." name="Conta" id="numero_conta" value="">
-    <input type="submit" onclick="valorConta()">
+    <button type="submit" id="adicionar"> Calcular</button>
 `
 principal.appendChild(fieldsetNumconta);
 
-
+let botAdicionar = document.getElementById ("adicionar");
+botAdicionar.addEventListener ('click', valorConta);
 
 function valorConta(){
     let numConta = document.getElementById ("numero_conta");
@@ -22,9 +24,13 @@ function valorConta(){
         <input type="number" placeholder="Digite o saldo..." name="saldo" id="numero_saldo" value="">
         <input type="number" placeholder="Digite o debito..." name="debito" id="numero_debito" value="">
         <input type="number" placeholder="Digite o credito..." name="credito" id="numero_credito" value="">
-        <input type="submit" onclick="exibeValor()">
+        <button type="submit" id="consultar"> Enviar</button>
     `
     principal.appendChild(recebeValor);
+
+    let botConsutar = document.getElementById ("consultar");
+    botConsutar.addEventListener ('click', exibeValor);
+   
 }
 
 
