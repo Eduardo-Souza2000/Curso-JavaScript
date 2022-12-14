@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 07 </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+
+    <fieldset id="principal">
+
+        <h1>Pesquisa entre habitantes</h1>
+
+        <article>
+            <input type="text"    placeholder="Nome do cidadao" autocomplete="off"  name="Nome"    id="nome"       value="">
+            <input type="number"  placeholder="Num. Filhos"     autocomplete="off"  name="Filhos"  id="num_filhos" value="">
+            <input type="number"  placeholder="Salario (R$)"    autocomplete="off"  name="salario" id="salario"    value="">
+            <button type="submit" id="adicionar"> Adicionar</button>
+        </article>
+
+        <table id="area_tabela">
+
+            <tr class="titulo_tabela">
+                <th>Nome</th>
+                <th>Número de filhos</th>
+                <th>Salário</th>
+            </tr>
+    
+        </table>
+
+        <article>
+            <h1>Informações gerais</h1>
+
+            <article id="exibeResultado">
+                
+            </article>
+            <button type="submit" id="atualizaDados" >Atualizar dados</button>
+
+        </article>
+        
+    </fieldset>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

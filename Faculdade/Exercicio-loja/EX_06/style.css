@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(50deg, rgba(243, 220, 9, 0.74), rgba(103, 119, 11, 0.671));
+}
+#principal{
+    margin-top: 10vw;
+    width: 20vw;
+    background-color: rgb(54, 90, 13);
+    color: white;
+}

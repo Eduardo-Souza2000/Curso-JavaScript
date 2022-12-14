@@ -1,0 +1,21 @@
+#principal {
+    background-color: rgba(93, 87, 128, 0.623);
+    width: 50vw;
+}
+
+fieldset{
+    background-color: rgb(176, 236, 236);
+    color: rgb(10, 10, 10);
+    font-weight: 800;
+}
+
+input {
+    background-color: rgb(173, 245, 239);
+    border-radius: 5px;
+}
+
+button{
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+}

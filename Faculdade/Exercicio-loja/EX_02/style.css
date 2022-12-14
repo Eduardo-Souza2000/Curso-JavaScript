@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#principal {
+    margin-top: 10vw;
+    background-color: rgb(4, 99, 99);
+    color: white;
+    width: 60vw;
+    align-items: center;
+}
